@@ -11,6 +11,8 @@ pipeline {
                     // Add initial content to the array
                     testArray << "Pipeline build report"
                     testArray << "====================="
+                    testArray << "=Build ${Build_Id}"
+
 
 
 

@@ -4,7 +4,10 @@ pipeline {
         stage ('Initialize') {
             steps {
                 echo "Initializing DB2 build"
+                script {
+                    def testArray = []
 
+                }
             }
         }
     }

@@ -22,8 +22,9 @@ pipeline {
             steps {
                 script {
                     // Simulate output from the build stage
-                    def buildOutput = "Build output: Successfully compiled!"
+                    def buildOutput = "Build ${Build_Id} output: Successfully compiled!"
                     echo buildOutput
+
                 }
             }
         } 

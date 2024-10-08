@@ -18,5 +18,13 @@ pipeline {
                 }
             }
         }
+        stage('Build') {
+            steps {
+                script {
+                    // Simulate output from the build stage
+                    def buildOutput = "Build output: Successfully compiled!"
+                }
+            }
+        } 
     }
 }

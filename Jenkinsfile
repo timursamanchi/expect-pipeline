@@ -26,7 +26,7 @@ pipeline {
                     echo buildOutput
 
                     def textArray = env.textArray.split("\n")
-                    textArray << buildOutput
+                    
 
                 }
             }

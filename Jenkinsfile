@@ -18,20 +18,5 @@ pipeline {
                 }
             }
         }
-
-        stage('Build') {
-            steps {
-                script {
-                    // Simulate output from the build stage
-                    def buildOutput = "Build output: Successfully compiled!"
-                    echo buildOutput
-
-                    // Append to the array
-                    def textArray = env.textArray.split("\n")
-                    textArray << buildOutput
-                    env.textArray = textArray.join('\n')
-                }
-            }
-        }
     }
 }

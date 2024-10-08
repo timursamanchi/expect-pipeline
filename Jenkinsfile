@@ -13,10 +13,8 @@ pipeline {
                     testArray << "====================="
                     testArray << "=Build ${Build_Id}"
 
-
-
-
-
+                    // Save the array for other stages
+                    env.testArray = textArray.join('\n')
                 }
             }
         }

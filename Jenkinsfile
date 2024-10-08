@@ -6,15 +6,15 @@ pipeline {
                 echo "Initializing DB2 build"
                 script {
                     // Initialize an empty array (List)
-                    def testArray = []
+                    def textArray = []
 
                     // Add initial content to the array
-                    testArray << "Pipeline build report"
-                    testArray << "====================="
-                    testArray << "=Build ${Build_Id}"
+                    textArray << "Pipeline build report"
+                    textArray << "====================="
+                    textArray << "=Build ${Build_Id}"
 
                     // Save the array for other stages
-                    env.testArray = testArray.join('\n')
+                    env.textArray = textArray.join('\n')
                 }
             }
         }

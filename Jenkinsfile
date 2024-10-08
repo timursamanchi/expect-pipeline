@@ -25,6 +25,9 @@ pipeline {
                     def buildOutput = "Build ${Build_Id} output: Successfully compiled!"
                     echo buildOutput
 
+                    def textArray = env.textArray.split("\n")
+                    textArray << buildOutput
+
                 }
             }
         } 
